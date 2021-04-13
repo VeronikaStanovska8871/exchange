@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="146.0" prefWidth="806.0" style="-fx-background-color: GHOSTWHITE; -fx-background-radius: 20px;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <TextArea layoutX="73.0" layoutY="54.0" prefHeight="37.0" prefWidth="92.0" style="-fx-border-color: NAVY; -fx-border-radius: 10px;">
+         <font>
+            <Font name="Cambria" size="12.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="TEXT" />
+         </cursor></TextArea>
+      <Button layoutX="181.0" layoutY="61.0" mnemonicParsing="false" prefHeight="19.0" prefWidth="77.0" style="-fx-background-color: NAVY; -fx-background-radius: 25px;" text="Convert" textFill="WHITE">
+         <font>
+            <Font name="Cambria" size="12.0" />
+         </font>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+   </children>
+   <effect>
+      <DropShadow height="25.77" radius="11.192499999999999">
+         <color>
+            <Color opacity="0.5112456679344177" />
+         </color>
+      </DropShadow>
+   </effect>
+</Pane>
