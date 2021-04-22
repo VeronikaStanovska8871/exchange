@@ -11,7 +11,9 @@ import java.util.Scanner;
 import java.util.Set;
 
 public class ApiRequest {
-    private static final String key = "0d2198cb88b6d1af6c8d02f3c6940c64";
+    public static final String ACCESS_KEY = "0d2198cb88b6d1af6c8d02f3c6940c64";
+    public static final String BASE_URL = "https://apilayer.net/api/";
+    public static final String ENDPOINT = "convert";
 
     public Map getExchangeRates(Set<String> rates){
         if(rates==null || rates.size() ==0)
@@ -19,8 +21,9 @@ public class ApiRequest {
         return parseData(rates);
     }
     private String getRatesFromAPIServer(){
+
         try {
-            URL url = new URL("http://api.exchangeratesapi.io/v1/latest?access_key="+key+"&format=1");
+            URL url = new URL(BASE_URL + ENDPOINT + "?access_key=" + ACCESS_KEY + "&from=GBP&to=INR&amount=2");
             HttpURLConnection conn = (HttpURLConnection) url.openConnection();
             conn.setRequestMethod("GET");
             conn.connect();

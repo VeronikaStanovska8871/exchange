@@ -2,6 +2,7 @@ package sk.kosickaakademia.exchange;
 
 import sk.kosickaakademia.exchange.calc.CalcExchangeRates;
 
+
 import java.util.HashSet;
 import java.util.Set;
 
@@ -16,4 +17,6 @@ public class Main {
         CalcExchangeRates calcExchangeRates = new CalcExchangeRates();
         calcExchangeRates.calculate(90);
     }
+
+
 }
